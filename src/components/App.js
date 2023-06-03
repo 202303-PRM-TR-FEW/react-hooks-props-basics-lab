@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home city={user.city} color={user.color} name={user.name} />
+      <About links = {user.links} bio = {user.bio}/>
     </div>
   );
 }
